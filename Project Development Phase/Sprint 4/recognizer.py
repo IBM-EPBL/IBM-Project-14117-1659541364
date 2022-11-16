@@ -55,7 +55,7 @@ def recognize(image: bytes) -> tuple:
 	values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 	others = list(zip(values, pred))
  
-	# Get the value with the highest accuracy
+	# Gets the value with the highest accuracy
 	best = others.pop(best)
 
 	return best, others, img_name
